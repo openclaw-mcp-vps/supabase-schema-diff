@@ -1,0 +1,46 @@
+@import "tailwindcss";
+@import "diff2html/bundles/css/diff2html.min.css";
+
+:root {
+  --background: #0d1117;
+  --surface: #0f172a;
+  --text-primary: #e2e8f0;
+  --text-muted: #94a3b8;
+  --accent: #22d3ee;
+}
+
+* {
+  border-color: rgb(30 41 59 / 1);
+}
+
+html,
+body {
+  min-height: 100%;
+  background: radial-gradient(circle at 15% 20%, rgba(34, 211, 238, 0.08), transparent 35%),
+    radial-gradient(circle at 90% 10%, rgba(248, 250, 252, 0.05), transparent 25%),
+    radial-gradient(circle at 30% 80%, rgba(34, 211, 238, 0.06), transparent 30%),
+    #0d1117;
+  color: var(--text-primary);
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+}
+
+.d2h-wrapper {
+  background-color: transparent;
+}
+
+.d2h-file-header,
+.d2h-file-diff,
+.d2h-code-line,
+.d2h-code-linenumber,
+.d2h-file-list {
+  background-color: #0b1220 !important;
+  color: #d1d5db !important;
+  border-color: #1e293b !important;
+}
